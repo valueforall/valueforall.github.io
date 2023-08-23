@@ -5,6 +5,26 @@
     --dark: #353535;
 }
 
+.marquee {
+    width: 100%;
+    background-color: #AB7442;
+    color: #fff2df;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.marquee p {
+    margin: auto auto;
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 25s linear infinite;
+}
+
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+
 .fw-medium {
     font-weight: 500 !important;
 }
